@@ -1,5 +1,13 @@
 .venv/
 __pycache__/
+*.ipynb
+*.py
+!models
+models/*
+!models/base_model.py
+!models/bert_model.py
+!models/retrieve_models.py
+!Datasets
 Datasets/*
 !Datasets/dataIterBase.py
 !Datasets/dataIterBert.py
@@ -8,10 +16,7 @@ Datasets/*
 !Datasets/trec.py
 !Datasets/trecdl.py
 Results/
-models/__pycache__/
-models/dpr_model.py
-models/drmm_model.py
-models/lstm_model.py
+
 train/train_drmm.py
 trained/
 utilities/
@@ -20,8 +25,6 @@ utilities/
 bert-base-uncased-vocab.txt
 build_index.sh
 msmarco_neg.txt
-*.ipynb
-*.py
 !attack_methods.py
 !attack_run.py
 !attack_trigger_length.py
